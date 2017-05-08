@@ -1,0 +1,22 @@
+<h1><%= current_institution_message =%></h1>
+
+<%= link_to 'Grupos', groups_path %>
+
+<h1>Groups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Promotion year</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @groups.each do |group| %>
+      <tr>
+        <td><%= group.name %></td>
+        <td><%= group.promotion_year %></td>
+      </tr>
+    <% end %>
+  </tbody>
