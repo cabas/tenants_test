@@ -20,3 +20,25 @@
       </tr>
     <% end %>
   </tbody>
+  </table>
+
+<h1>Hashes</h1>
+  <table>
+  <thead>
+    <tr>
+      <th>Schema name</th>
+      <th>Name</th>
+      <th>Promotion year</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hashes.each do |item| %>
+      <tr>
+        <td><%= item["schema_name"] %></td>
+        <td><%= item["name"] %></td>
+        <td><%= item["promotion_year"] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  </table>
