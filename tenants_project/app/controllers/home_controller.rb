@@ -5,6 +5,7 @@ class HomeController < ApplicationController
     #Apartment::Tenant.switch(institution.subdomain) do
     #@groups = @groups + Group.all 
 
+    byebug
 
     
     first = ActiveRecord::Base.connection.execute("SELECT for_all_schemas('SELECT * FROM groups')")
